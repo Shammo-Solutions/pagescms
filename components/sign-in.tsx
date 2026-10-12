@@ -133,23 +133,25 @@ export function SignIn() {
 
   const legalCopy = (
     <p className="text-sm text-muted-foreground">
-      By clicking continue, you agree to our{" "}
+      Provided by Shammo Solutions. Our{" "}
       <a
         className="underline hover:decoration-muted-foreground/50"
-        href="https://pagescms.org/terms"
+        href="https://www.shammosolutions.nl/voorwaarden"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Terms of Service
+        Terms
       </a>{" "}
       and{" "}
       <a
         className="underline hover:decoration-muted-foreground/50"
-        href="https://pagescms.org/privacy"
+        href="https://www.shammosolutions.nl/privacy"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Privacy Policy
-      </a>
-      .
+        Privacy Statement
+      </a>{" "}
+      apply.
     </p>
   );
 
