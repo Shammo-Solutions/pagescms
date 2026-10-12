@@ -47,12 +47,12 @@ export function User({
               src={
                 user?.githubUsername
                   ? `https://github.com/${user.githubUsername}.png`
-                  : `https://unavatar.io/${user?.email}?fallback=false`
+                  : undefined
               }
               alt={user?.name || user.email}
             />
             <AvatarFallback>
-              {getInitialsFromName(user.name ?? undefined)}
+              {getInitialsFromName(user.name || user.email)}
             </AvatarFallback>
           </Avatar>
         </Button>
